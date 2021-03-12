@@ -10,20 +10,19 @@ How to use:
 1. Setup AutoEq https://github.com/jaakkopasanen/AutoEq and install Audacity. Also notepad++ or sublime text will help.
 2. Git clone this project or download zip.
 3. Open cmd, cd to Equalizer Apo folder.
-4. Type 'Benchmark.exe -c 1 -f 1 -t 23000 -l 46 -r 48000 -o sweep.wav' (change 48000 to your sampling rate) (sweep.wav is an arbitrary filename) (Benchmark.exe is a part of an AutoEq project)
-5. Open sweep.wav on audacity, then File>>Export>>Export Wav. Choose to save as '32 bit float'. For this tutorial, I'll go with 'expfloat.wav'.
-4. Type `Benchmark.exe -c 1 -f 1 -t 23000 -l 46 -r 48000 -o sweep.wav` (change 48000 to your sampling rate) (sweep.wav is an arbitrary filename) (Benchmark.exe is a part of an AutoEq project)
-5. Open sweep.wav on audacity, then File>>Export>>Export Wav. Choose to save as '32 bit float'. For this tutorial, I'll go with `expfloat.wav`. 
-6. Put the exported wav in the same folder as 'testing123.py' from this project.
-7. Open the 'testing123.py' with text editor.
-8. On the first row, change the filename to 'expfloat' (filename without extension)
-9. Run y.bat or with cmd python testing123.py
-10. There will be a few graph plotted. You can safely close it.
-11. After the program is done, there will be a csv file named 'expfloat.csv' (again, arbitrary name)
-12. Create a folder called 'expfloat' on the AutoEq folder (where 'autoeq.py' is located in)
-13. Put the csv inside your created folder
-14. In the AutoEq folder, rename 'constants.py' to something else and replace with the one included from this project.
-14. In the AutoEq folder, rename `constants.py` to something else and replace with the one included from this project.
+4. Open your Equalizer Apo config.txt (or peace.txt for Peace) and add `; Benchmark` in the device selection line. Check this image as an example: https://i.imgur.com/jHmKxdv.png
+5. Type 'Benchmark.exe -c 1 -f 1 -t 23000 -l 46 -r 48000 -o sweep.wav' (change 48000 to your sampling rate) (sweep.wav is an arbitrary filename) (Benchmark.exe is a part of an AutoEq project)
+6. Open sweep.wav on audacity, then File>>Export>>Export Wav. Choose to save as '32 bit float'. For this tutorial, I'll go with 'expfloat.wav'.
+7. Put the exported wav in the same folder as 'testing123.py' from this project.
+8. Open the 'testing123.py' with text editor.
+9. On the first row, change the filename to 'expfloat' (filename without extension)
+10. Run y.bat or with cmd python testing123.py
+11. There will be a few graph plotted. You can safely close it.
+12. After the program is done, there will be a csv file named 'expfloat.csv' (again, arbitrary name)
+13. Create a folder called 'expfloat' on the AutoEq folder (where 'autoeq.py' is located in)
+14. Put the csv inside your created folder
+15. In the AutoEq folder, rename 'constants.py' to something else and replace with the one included from this project.
+16. In the AutoEq folder, rename `constants.py` to something else and replace with the one included from this project.
 
 
 
