@@ -4,7 +4,7 @@ https://i.imgur.com/GsyPTNY.png
 
 In the picture above I generated a Graphic EQ file from a SonarWorks Reference equalization (in the form of an IR wav) intended for my non-rooted Android device. The IR wav is for comparison to make sure that the output matches the intended equalization. This is because Graphic EQ has limitations on filtering narrow peaks.
 
-Although, I took a listen to the original curve and the Graphic EQ and basically couldn't tell any differences. In the picture you can see some narrow filter missing from the Graphic EQ but it doesn't seem to affect my hearing perception. YMMV. Anyway, tutorial below.
+Although, I took a listen to the original curve and the Graphic EQ and basically couldn't tell any differences. In the picture you can see some narrow filter missing from the Graphic EQ but it doesn't seem to affect my hearing perception. YMMV. Anyways, tutorial below.
 
 How to use:
 1. Setup AutoEq https://github.com/jaakkopasanen/AutoEq and install Audacity. Also notepad++ or sublime text will help.
