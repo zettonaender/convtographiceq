@@ -7,12 +7,13 @@ In the picture above I generated a Graphic EQ file from a SonarWorks Reference e
 Although, I took a listen to the original curve and the Graphic EQ and basically couldn't tell any differences. In the picture you can see some narrow filter missing from the Graphic EQ but it doesn't seem to affect my hearing perception. YMMV. Anyways, tutorial below.
 
 How to use:
-1. Setup AutoEq https://github.com/jaakkopasanen/AutoEq and install Audacity. Also notepad++ or sublime text will help.
+1. Setup AutoEq https://github.com/jaakkopasanen/AutoEq. Also notepad++ or sublime text will help.
 2. Git clone this project or download zip.
 3. Open cmd, cd to Equalizer Apo folder.
 4. Open your Equalizer Apo config.txt (or peace.txt for Peace) and add `; Benchmark` in the device selection line. Check this image as an example: https://i.imgur.com/jHmKxdv.png
-5. Type `Benchmark.exe -c 1 -f 1 -t 23000 -l 46 -r 48000 -o sweep.wav` (change 48000 to your sampling rate) (sweep.wav is an arbitrary filename) (Benchmark.exe is located in Equalizer APO folder)
+5. Type `Benchmark.exe -c 1 -t 24000 -l 48 -r 48000 -o sweep.wav` (change 48000 to your sampling rate) (sweep.wav is an arbitrary filename) (Benchmark.exe is located in Equalizer APO folder)
 6. Open `sweep.wav` on audacity, then `File>>Export>>Export Wav`. Choose to save as `32 bit float`. For this tutorial, I'll go with 'expfloat.wav'.
+	UPDATE: Using audacity apparently is not needed, rename the file as `expfloat.wav` and continue to the next step.
 7. Put the exported wav in the same folder as `testing123.py` from this project.
 8. Open the `testing123.py` with text editor.
 9. On the first row, change the filename to `expfloat` (filename without extension)
