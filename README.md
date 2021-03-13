@@ -1,4 +1,6 @@
 # convtographiceq
+Update: Check step 5 and 6 for changes.
+
 For converting Equalizer Apo config to CSV for AutoEQ. This makes it possible to generate Graphic Eq for Wavelet (Non-Root Android Eq) and others.
 https://i.imgur.com/GsyPTNY.png
 
@@ -13,9 +15,11 @@ How to use:
 4. Open your Equalizer Apo config.txt (or peace.txt for Peace) and add `; Benchmark` in the device selection line. Check this image as an example: https://i.imgur.com/jHmKxdv.png
 	
 5. Type `Benchmark.exe -c 1 -t 24000 -l 48 -r 192000 -o sweep.wav` (change 192000 to your sampling rate) (sweep.wav is an arbitrary filename) (Benchmark.exe is located in Equalizer APO folder).
+
 	UPDATE: Using a higher sampling rate in this step results in a much smoother and accurate results. I suggest that you temporarily change your device's sampling rate to 	the highest possible before running the benchmark.
 	
 6. Open `sweep.wav` on audacity, then `File>>Export>>Export Wav`. Choose to save as `32 bit float`. For this tutorial, I'll go with 'expfloat.wav'.
+
 	UPDATE: Using audacity apparently is not needed, rename the file as `expfloat.wav` and continue to the next step.
 	
 7. Put the exported wav in the same folder as `testing123.py` from this project.
@@ -31,7 +35,7 @@ How to use:
 
 A few notes on the 'constants' file changes, you can take a look and tweak these if you have inaccuracies with the result:
 
-	`DEFAULT_F_MIN = 20` to `DEFAULT_F_MIN = 0.1`
+	`DEFAULT_F_MIN = 20` to `DEFAULT_F_MIN = 1`
 	Changes the minimum frequency that will be equalized. Without this, my results are missing an intended peak at 30Hz.
 	
 	`DEFAULT_MAX_GAIN = 6.0` to `DEFAULT_MAX_GAIN = 15.0`
