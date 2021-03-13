@@ -13,7 +13,8 @@ How to use:
 4. Open your Equalizer Apo config.txt (or peace.txt for Peace) and add `; Benchmark` in the device selection line. Check this image as an example: https://i.imgur.com/jHmKxdv.png
 5. Type `Benchmark.exe -c 1 -t 24000 -l 48 -r 48000 -o sweep.wav` (change 48000 to your sampling rate) (sweep.wav is an arbitrary filename) (Benchmark.exe is located in Equalizer APO folder)
 6. Open `sweep.wav` on audacity, then `File>>Export>>Export Wav`. Choose to save as `32 bit float`. For this tutorial, I'll go with 'expfloat.wav'.
-	UPDATE: Using audacity apparently is not needed, rename the file as `expfloat.wav` and continue to the next step.
+UPDATE: Using audacity apparently is not needed, rename the file as `expfloat.wav` and continue to the next step.
+	
 7. Put the exported wav in the same folder as `testing123.py` from this project.
 8. Open the `testing123.py` with text editor.
 9. On the first row, change the filename to `expfloat` (filename without extension)
