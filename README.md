@@ -54,7 +54,7 @@ Changing the `F_MIN` and `TREBLE_SMOOTHING_ITERATIONS` only should generate the 
 
     
 15. Open my_results/expfloat and take the Graphic EQ.txt file. The equalization curve is now usable on non-rooted devices.
-`python autoeq.py --input_dir="ssweep" --output_dir="my_results/ssweep" --compensation="compensation/zero.csv" --equalize --show_plot --convolution_eq --fs=48000`
+`python autoeq.py --input_dir="ssweep" --output_dir="my_results/ssweep" --compensation="compensation/zero.csv" --equalize --show_plot --convolution_eq --fs=48000,44100,192000`
 
 	The main thing is we will use the `zero.csv` as target to generate a new curve for AutoEq.
 	
