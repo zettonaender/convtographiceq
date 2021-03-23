@@ -2,7 +2,7 @@
 Update (23 March 2021): Method changed to use scipy.signal.periodogram and tutorial rewrite.
 
 For converting Equalizer Apo (or Peace) config to CSV for AutoEQ. This makes it possible to generate Graphic Eq for Wavelet (Non-Root Android Eq) and others.
-https://i.imgur.com/GsyPTNY.png
+https://i.imgur.com/fjK8muf.png
 
 In the picture above I generated a Graphic EQ file from a SonarWorks Reference equalization (in the form of an IR wav) intended for my non-rooted Android device. The IR wav is for comparison to make sure that the output matches the intended equalization. This is because Graphic EQ has limitations on filtering narrow peaks.
 
