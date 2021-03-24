@@ -17,17 +17,17 @@ How to use:
 5. Type `Benchmark.exe -c 1 -t 24000 -l 48 -r 48000 -o ssweep.wav` (change 48000 to your sampling rate) (ssweep.wav is an arbitrary filename) (Benchmark.exe is located in Equalizer APO folder). 
 
 	Optional: Increasing length to a multiple of 2 and changing the `length` in the `periodogram.py` can yield more accurate result (doesn't mean you need to though). 
-	`length` is `Sampling rate/Highest frequencies`.
 
 6. Put `ssweep.wav` in the same folder as `periodogram.py` from this project.
 7. Open the `periodogram.py` with text editor.
 8. On the first row, change the filename to `ssweep` (filename without extension)
-9. Open `run.bat` or with cmd `python testing123.py`.
-10. There will be an inverted graph plotted. You can safely close it.
-11. After the program is done, there will be a csv file named `ssweep.csv` (again, arbitrary name)
-12. Create a folder called `ssweep` on the AutoEq folder (where `autoeq.py` is located in)
-13. Put the csv inside your created folder
-14. In the AutoEq folder, rename `constants.py` to something else and replace with the one included from this project.
+9. Change `length` to `Sampling rate/Highest frequencies`.
+10. Open `run.bat` or with cmd `python testing123.py`.
+11. There will be an inverted graph plotted. You can safely close it.
+12. After the program is done, there will be a csv file named `ssweep.csv` (again, arbitrary name)
+13. Create a folder called `ssweep` on the AutoEq folder (where `autoeq.py` is located in)
+14. Put the csv inside your created folder
+15. In the AutoEq folder, rename `constants.py` to something else and replace with the one included from this project.
 
 A few notes on the 'constants' file changes, you can take a look and tweak these if you have inaccuracies with the result:
 
