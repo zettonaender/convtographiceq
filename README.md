@@ -21,7 +21,7 @@ How to use:
 6. Put `ssweep.wav` in the same folder as `periodogram.py` from this project.
 7. Open the `periodogram.py` with text editor.
 8. On the first row, change the filename to `ssweep` (filename without extension)
-9. Change `length` to `Sampling rate/Highest frequencies`.
+9. Change `length` to `Length/Highest frequencies in KHz`.
 10. Open `run.bat` or with cmd `python testing123.py`.
 11. There will be an inverted graph plotted. You can safely close it.
 12. After the program is done, there will be a csv file named `ssweep.csv` (again, arbitrary name)
