@@ -1,5 +1,5 @@
 filename='ssweep'
-length=2
+length=1
 
 import csv
 from scipy.io import wavfile
