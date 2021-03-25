@@ -1,8 +1,13 @@
 # convtographiceq
+<<<<<<< HEAD
 Update (23 March 2021): Method changed to use scipy.signal.periodogram and tutorial rewrite.
 
 For converting Equalizer Apo (or Peace) config to CSV for AutoEQ. This makes it possible to generate Graphic Eq for Wavelet (Non-Root Android Eq) and others.
 https://i.imgur.com/fjK8muf.png
+=======
+For converting Equalizer Apo config to CSV for AutoEQ. This makes it possible to generate Graphic Eq for Wavelet (Non-Root Android Eq) and others.
+https://i.imgur.com/GsyPTNY.png
+>>>>>>> parent of 6481943 (Update README.md)
 
 In the picture above I generated a Graphic EQ file from a SonarWorks Reference equalization (in the form of an IR wav) intended for my non-rooted Android device. The IR wav is for comparison to make sure that the output matches the intended equalization. This is because Graphic EQ has limitations on filtering narrow peaks.
 
@@ -13,6 +18,7 @@ How to use:
 2. Git clone this project or download zip.
 3. Open cmd, cd to Equalizer Apo folder.
 4. Open your Equalizer Apo config.txt (or peace.txt for Peace) and add `; Benchmark` in the device selection line. Check this image as an example: https://i.imgur.com/jHmKxdv.png
+<<<<<<< HEAD
 
 5. Type `Benchmark.exe -c 1 -t 24000 -l 48 -r 48000 -o ssweep.wav` (change 48000 to your sampling rate) (ssweep.wav is an arbitrary filename) (Benchmark.exe is located in Equalizer APO folder). 
 
@@ -26,12 +32,28 @@ How to use:
 11. There will be an inverted graph plotted. You can safely close it.
 12. After the program is done, there will be a csv file named `ssweep.csv` (again, arbitrary name)
 13. Create a folder called `ssweep` on the AutoEq folder (where `autoeq.py` is located in)
+=======
+	
+5. Type `Benchmark.exe -c 1 -t 24000 -l 48 -r 192000 -o sweep.wav` (change 192000 to your sampling rate) (sweep.wav is an arbitrary filename) (Benchmark.exe is located in Equalizer APO folder).
+	UPDATE: Using a higher sampling rate in this step results in a much smoother and accurate results. I suggest that you temporarily change your device's sampling rate to 	the highest possible before running the benchmark.
+	
+6. Open `sweep.wav` on audacity, then `File>>Export>>Export Wav`. Choose to save as `32 bit float`. For this tutorial, I'll go with 'expfloat.wav'.
+	UPDATE: Using audacity apparently is not needed, rename the file as `expfloat.wav` and continue to the next step.
+	
+7. Put the exported wav in the same folder as `testing123.py` from this project.
+8. Open the `testing123.py` with text editor.
+9. On the first row, change the filename to `expfloat` (filename without extension)
+10. Run `y.bat` or with cmd `python testing123.py`.
+11. There will be a few graph plotted. You can safely close it.
+12. After the program is done, there will be a csv file named `expfloat.csv` (again, arbitrary name)
+13. Create a folder called `expfloat` on the AutoEq folder (where 'autoeq.py' is located in)
+>>>>>>> parent of 6481943 (Update README.md)
 14. Put the csv inside your created folder
 15. In the AutoEq folder, rename `constants.py` to something else and replace with the one included from this project.
 
 A few notes on the 'constants' file changes, you can take a look and tweak these if you have inaccuracies with the result:
 
-	`DEFAULT_F_MIN = 20` to `DEFAULT_F_MIN = 1`
+	`DEFAULT_F_MIN = 20` to `DEFAULT_F_MIN = 0.1`
 	Changes the minimum frequency that will be equalized. Without this, my results are missing an intended peak at 30Hz.
 	
 	`DEFAULT_MAX_GAIN = 6.0` to `DEFAULT_MAX_GAIN = 15.0`
