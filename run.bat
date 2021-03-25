@@ -1,2 +1,2 @@
-py testing123.py
+py periodogram.py
 pause
