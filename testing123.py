@@ -1,4 +1,4 @@
-filename='micsweep46s'
+filename='expfloat'
 
 import csv
 from scipy.fftpack import rfft, rfftfreq
