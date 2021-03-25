@@ -1,10 +1,13 @@
 # convtographiceq
 <<<<<<< HEAD
+<<<<<<< HEAD
 Update (23 March 2021): Method changed to use scipy.signal.periodogram and tutorial rewrite.
 
 For converting Equalizer Apo (or Peace) config to CSV for AutoEQ. This makes it possible to generate Graphic Eq for Wavelet (Non-Root Android Eq) and others.
 https://i.imgur.com/fjK8muf.png
 =======
+=======
+>>>>>>> parent of 6481943 (Update README.md)
 For converting Equalizer Apo config to CSV for AutoEQ. This makes it possible to generate Graphic Eq for Wavelet (Non-Root Android Eq) and others.
 https://i.imgur.com/GsyPTNY.png
 >>>>>>> parent of 6481943 (Update README.md)
