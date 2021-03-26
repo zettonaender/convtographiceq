@@ -1,0 +1,1 @@
+python autoeq.py --input_dir="ssweep" --output_dir="my_results/ssweep" --compensation="zero.csv" --equalize --show_plot --convolution_eq --fs=48000,44100,192000 --parametric_eq --max_gain=12 --standardize_input
