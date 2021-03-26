@@ -21,8 +21,7 @@ How to use:
 6. Open the `periodogram.py` with text editor.
 7. On the first row, change the filename to `ssweep` (filename without extension)
 8. Open `run.bat` or with cmd `python periodogram.py`.
-9. There will be an inverted graph plotted. You can safely close it.
-10. After the program is done, there will be a folder named `myresult/ssweep`, take the `Graphic EQ.txt` file and import to wavelet.
+9. After the program is done, there will be a folder named `myresult/ssweep`, take the `Graphic EQ.txt` file and import to wavelet.
 
 Do keep in mind that Graphic EQ are not the best solution for headphone equalization since it cannot reproduce some filter accurately.
 
