@@ -8,6 +8,9 @@ In the picture above I generated a Graphic EQ file from a SonarWorks Reference e
 
 The picture also included the deviation of output from input. The only difference is <20Hz and >22000Hz. This is partly because of the trim function in the file to cut unneeded frequencies from the input. You can modify these if you wish.
 
+Before use, please download python and get pip:
+https://phoenixnap.com/kb/install-pip-windows
+
 How to use:
 1. Git clone this project or download zip. 
    Open cmd, cd to the folder from the zip.
