@@ -1,4 +1,6 @@
 # convtographiceq
+Notice: GUI Version available: https://github.com/zettonaender/eqapotographiceq-gui
+
 Update (26 March 2021): Removed the need to install autoeq, still uses the code from it, though.
 
 For converting Equalizer Apo (or Peace) config to CSV for AutoEQ. This makes it possible to generate Graphic Eq for Wavelet (Non-Root Android Eq) and others.
