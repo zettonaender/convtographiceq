@@ -1,5 +1,5 @@
 # convtographiceq
-Notice: GUI Version available: https://github.com/zettonaender/eqapotographiceq-gui
+Notice: This version is abandoned. Check the GUI Version for latest update: https://github.com/zettonaender/eqapotographiceq-gui
 
 Update (26 March 2021): Removed the need to install autoeq, still uses the code from it, though.
 
